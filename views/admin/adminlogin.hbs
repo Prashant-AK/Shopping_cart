@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+        <h1>Admin Login Form </h1>
+        {{>message}}
+        <form action="/admin/login" method="post">
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Enter the Email Address" name="email"/>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Enter the Password" name="password"/>
+            </div>
+            {{!-- <inpt type="hidden" name="_csrf" value="{{ csrfToken }}"/> --}}
+            <input type="submit" class="btn btn-primary" value="SignIn"/>
+        </form>
+        {{!-- {{csrfToken}} --}}
+    </div>
+</div>

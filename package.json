@@ -1,0 +1,36 @@
+{
+  "name": "shopc",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "server": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
+    "bcrypt": "^4.0.1",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "~1.4.4",
+    "crypto": "^1.0.1",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-flash": "0.0.2",
+    "express-handlebars": "^4.0.3",
+    "express-session": "^1.17.0",
+    "http-errors": "~1.6.3",
+    "instamojo-nodejs": "0.0.5",
+    "mongoose": "^5.9.7",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.2",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "paypal-rest-sdk": "^1.8.1",
+    "razorpay": "^2.0.6",
+    "util": "^0.12.2"
+  },
+  "devDependencies": {
+    "handlebars": "^4.7.6"
+  }
+}

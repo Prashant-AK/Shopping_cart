@@ -1,0 +1,38 @@
+<div class="container">
+  {{>message}}
+  <div class="container">
+            
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-md-10"><b><i><h1>Add New product, and modify.</h1></i></b></div>
+                    <div class="col-md-2"><a href="/admin/profile" style="color: whitesmoke;"><span class="glyphicon glyphicon-user"></span> Back to Profile </a></div>
+                  </div>
+                </div>
+                
+                </div>
+  </div>
+  
+  
+  <form action="/admin/additem" enctype="multipart/form-data" method="POST">
+  <input type="hidden" name="_id" value="{{docs._id}}">
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input type="text" class="form-control" id="title" placeholder="Enter Title" name="title" value="{{docs.title}}">
+    </div>
+     <div class="form-group">
+      <label for="image">Image:</label>
+      <input class="form-control" type="file" name="image" >
+    </div>
+    <div class="form-group">
+      <label for="description">Description:</label>
+      <input type="text" class="form-control" id="description" placeholder="Enter description" name="description" value="{{docs.description}}">
+    </div>
+     <div class="form-group">
+      <label for="price">Price:</label>
+      <input type="price" class="form-control" id="price" placeholder="Enter Price" name="price" value="{{docs.price}}">
+    </div>
+   
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>

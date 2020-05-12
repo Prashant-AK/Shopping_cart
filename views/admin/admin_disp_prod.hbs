@@ -1,0 +1,46 @@
+
+<div class="container">
+    <div class="container">
+            
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-md-10"><b><i><h1>All Products are listed below.</h1></i></b></div>
+                    <div class="col-md-2"><a href="/admin/profile" style="color: whitesmoke;"><span class="glyphicon glyphicon-user"></span> Back to Profile </a></div>
+                  </div>
+                </div>
+                
+                </div>
+  </div>
+    
+    <div>
+        <table class="table table-condensed ">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Image</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Edit</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+             {{#each products}}
+            <tbody>
+                {{#each this}}
+                <tr>
+                    <td><span ><b>{{this.title}}</b></span></td>
+                    <td><img src="{{this.imgpath}}" width="130" class="img-thumbnail"></td>
+                    <td><b>{{this.description}}</b></td>
+                    <td><b>{{this.price}}</b></td>
+                    <td><a href="/admin/edit/{{this._id}}"><span class="glyphicon glyphicon-edit"></span>Edit</a></td>
+                    <td><a href="/admin/delete/{{this._id}}"><span class="glyphicon glyphicon-remove"></span>Remove</a></td>
+                </tr>
+                 {{/each}}
+      
+            </tbody>
+            {{/each}}
+        </table>
+    </div>
+    
+</div>
